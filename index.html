@@ -4,24 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>HyperionDev - Learn To Code</title>
-    <!-- CDN LINKS  -->
+    <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
     />
-    <!-- END CDN LINKS  -->
-
     <!-- Local Fallback Link CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- Local END  Fallback Link CSS -->
 
-    <!-- custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/index.css" />
-    <!-- end custom css -->
 
-    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -29,120 +24,203 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- end font awesome -->
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="#" class="navbar-brand">
-              <img src="./assets/img/url@3x.png" alt="" />
-            </a>
-          </div>
+    <nav class="navbar navbar-default hidden-xs navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand hidden-xs" href="#">
+            <img src="./assets/img/url@3x.png" alt="" srcset="" width="150" />
+          </a>
         </div>
-      </nav>
-    </header>
+
+        <ul class="nav navbar-nav">
+          <li class="hidden-xs">
+            <a href="#" class="main-link">Full Stack Web Developer Bootcamp</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <div class="navbar-profile">
+              <div
+                class="profile-container dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <img src="./assets/img/student.png" alt="" srcset="" />
+              </div>
+              <span
+                class="dropdown-toggle nav-right"
+                data-toggle="dropdown"
+                href="#"
+                >Profile</span
+              >
+
+              <ul class="dropdown-menu">
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- mobile-navigation -->
+    <nav class="nav-mobile hidden-sm hidden-md hidden-lg navbar-fixed-top">
+      <div>
+        <img src="./assets/img/url.png" alt="" />
+      </div>
+
+      <li><a href="#" class="nav-link">Get mentor Support</a></li>
+
+      <li class="profile-container">
+        <div class="profile-image">
+          <img src="./assets/img/student.png" alt="" width="30" />
+        </div>
+        <div class="profile-text">
+          <a href="#" class="nav-link">Profile</a>
+        </div>
+        <ul class="dropdown-menu">
+          <li><a href="#">Edit Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </li>
+    </nav>
+    <!-- end mobile navigatin -->
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="md-12 quard-1">
-              <div class="col-md-12 quard-1-child-1">
-                <div class="quard-1-child-1-img">
-                  <img
-                    src="./assets/img/beginner-php-fundamentals.png"
-                    alt=""
-                  />
-                </div>
-                <div class="quard-1-child-1-details">
-                  <h3>Web Development Bootcamp Trial</h3>
-                  <div>
-                    <a href="#" class="btn btn-primary"
-                      >Continue your trial
-                      <i class="fa-solid fa-chevron-right"></i
-                    ></a>
-                  </div>
-                </div>
+        <div class="col-md-8 quard-1">
+          <div class="quard-chid-1-2-container">
+            <div class="quard-child-1">
+              <div>
+                <img
+                  src="./assets/img/beginner-php-fundamentals.png"
+                  alt=""
+                  srcset=""
+                />
               </div>
+              <div>
+                <h2>Web Development Bootcamp Trial</h2>
+                <button class="btn btn-primary">
+                  Continue your trial <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="quard-child-2">
+              <h4>Your progress <span class="light">(1/4 complete)</span></h4>
 
-              <div class="col-md-12 quard-1-child-2">
-                <div class="title-container">
-                  <h4>
-                    Your progress <span class="light">(1/4 complete)</span>
-                  </h4>
+              <div class="quard-child-2-progress-tabs">
+                <div class="completed">
+                  <h5>
+                    Industry Knowledge 1 <i class="fa-solid fa-check"></i>
+                  </h5>
                 </div>
-                <div class="quard-1-child-2-details">
-                  <div class="complete">
-                    <p>Industry Knowledge 1</p>
-                  </div>
-
-                  <div>
-                    <p>Industry Knowledge 2</p>
-                  </div>
-                  <div>
-                    <p>HTML Basics</p>
-                  </div>
-                  <div>
-                    <p>You First PHP Script</p>
-                  </div>
+                <div>
+                  <h5>Industry Knowledge 2</h5>
+                </div>
+                <div>
+                  <h5>HTML Basics</h5>
+                </div>
+                <div>
+                  <h5>You First PHP Script</h5>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="md-12 quard-1-b">
-              <div class="title-container">
-                <h3>Trial another Bootcamp</h3>
-              </div>
+          <div class="quard-child-3">
+            <h3>Trial another Bootcamp</h3>
 
-              <div class="quard-1-b-programs">
-                <div class="quard-1-b-program">
-                  <div class="mobile-developer">
-                    <img
-                      src="/assets/img/layer-115.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="bootcamp-titles">
-                    <img
-                      src="/assets/img/mobile-developer-bootcamp.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
+            <div class="quard-child-3-bootcamps">
+              <div>
+                <div>
+                  <img src="./assets/img/layer-115.png" alt="" srcset="" />
                 </div>
-                <div class="quard-1-b-program">
-                  <div class="software-engineer-bootcamp">
-                    <img
-                      src="/assets/img/layer-114.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                  <div class="bootcamp-titles">
-                    <img
-                      class="img-responsive"
-                      src="/assets/img/software-engineer-bootcamp.png"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="./assets/img/mobile-developer-bootcamp.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="./assets/img/layer-114.png" alt="" srcset="" />
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/software-engineer-bootcamp.png"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-5 quard-2"></div>
+        <div class="col-md-4 quard-2">
+          <div class="quard-2-child-1">
+            <div class="quard-2-child-1-heading">
+              <h3>Your coding journey</h3>
+              <i
+                class="fa-regular fa-circle-question"
+                data-toggle="tooltip"
+                data-placement="right"
+                data-title="This is where you track your coding journey, from the amount of code you've written to the reviews you've received, all at your fingertips."
+              ></i>
+            </div>
+
+            <div class="quard-2-child-1-progress-details">
+              <div>
+                <h2>1</h2>
+                <p>Total programs written</p>
+              </div>
+
+              <div>
+                <h2>4</h2>
+                <p>Total code reviews</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quard-2-child-2">
+            <h3>Get more information</h3>
+
+            <div>
+              <p>
+                We're ready to help with any questions you may have about our
+                Bootcamps and Mentor Support.
+              </p>
+            </div>
+            <div class="quard-2-child-2-btns">
+              <button class="btn btn-secondary">Book a call</button>
+              <button class="btn btn-secondary">Join an info session</button>
+            </div>
+          </div>
+
+          <div class="quard-2-child-3">
+            <h3>Upgrade to the Full Bootcamp</h3>
+
+            <div>
+              <p>Our next cohort starts 3 January 2018.</p>
+            </div>
+            <div class="rsvp-btn">
+              <button class="btn btn-secondary">Reserve your spot</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- CDN LINKS  JS-->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- END CDN LINKS JS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Local Fallback Link JavaScript -->
-    <script src="./js/bootstrap.min.js"></script>
-    <!--End  Local Fallback Link JavaScript -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
