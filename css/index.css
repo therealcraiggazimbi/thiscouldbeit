@@ -111,14 +111,10 @@ button:visited {
 }
 
 .container {
-  margin-top: 13rem; /* Change this value to adjust the margin size */
+  margin-top: 13rem;
 }
 
 /* Quard */
-
-/* .quard-1 {
-  min-height: 100vh;
-} */
 
 .quard-chid-1-2-container {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -159,6 +155,15 @@ button:visited {
   color: var(--primary-color);
   padding: 3px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.quard-child-2-progress-tabs > div:active {
+  transform: scale(0.98);
+}
+
+.quard-child-2-progress-tabs > div:hover {
+  opacity: 0.8;
 }
 
 .completed {
@@ -198,13 +203,10 @@ button:visited {
 
 .quard-child-3-bootcamps > div > div:nth-child(2) img {
   height: 80px;
-  width: 233px;
+  width: 220px;
   object-fit: contain;
   background-color: var(--white-color);
 }
-/* .quard-2 {
-  min-height: 100vh;
-} */
 
 .quard-2-child-1-heading {
   display: flex;
@@ -358,7 +360,7 @@ button:visited {
   /* Quards */
 
   .quard-chid-1-2-container {
-    padding: 0rem 1rem;
+    padding: 4rem 3rem !important;
   }
 
   .quard-child-1 {
@@ -376,9 +378,6 @@ button:visited {
     height: 50px;
   }
 
-  .quard-chid-1-2-container {
-    padding: 5rem 5rem;
-  }
   .quard-child-2-progress-tabs {
     display: grid;
     grid-template-columns: 1fr;
@@ -387,17 +386,21 @@ button:visited {
   .quard-child-3 {
     margin-top: 50px;
   }
+
+  .quard-child-3 h3 {
+    padding-left: 4rem;
+  }
   .quard-child-3 .quard-child-3-bootcamps {
     grid-template-columns: 1fr;
     padding-bottom: 5rem;
   }
 
   .quard-2 h3 {
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-bottom: 1.5rem;
   }
   .quard-2-child-1-progress-details {
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
 
   .quard-2-child-1-progress-details > div {
@@ -409,12 +412,12 @@ button:visited {
   }
 
   .quard-2 p {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .quard-2-child-2-btns {
-    padding-left: 4rem;
+    padding-left: 3rem;
     display: block;
     width: 70%;
   }
@@ -426,7 +429,7 @@ button:visited {
     display: none;
   }
   .rsvp-btn {
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
 
   .quard-2-child-3 {
